@@ -32,7 +32,7 @@ def calculator():
 
         #Get the operator from user
         operator = input("Pick an operation: ")
-        #operator = input("+ \n- \n* \n\\ \nPick an operation: ")
+        
         #If user choose invalid operator other than arithmatic
         if operator not in operations:
             print("You chose an invalid operation.")
@@ -46,14 +46,6 @@ def calculator():
 
         #Calculate the result by calling the function
         answer = function(first_number, second_number)
-        # if operator == "+":
-        #     answer = add(first_number, second_number)
-        # elif operator == "-":
-        #     answer = subtract(first_number, second_number)
-        # elif operator == "*":
-        #     answer = multiply(first_number, second_number)
-        # else:
-        #     answer = divide(first_number, second_number)
 
         #Print results
         print(f"{first_number} {operator} {second_number} = {answer}")
@@ -67,8 +59,6 @@ def calculator():
         else:
             should_continue = False
             calculator()
-            #print(logo)
-            #first_number = float(input("What's the first number?: "))
 
 #Operations
 operations = {
